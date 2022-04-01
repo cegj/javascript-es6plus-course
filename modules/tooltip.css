@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+.box {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    position: relative;
+}
+
+.box.cor1 {
+    background-color:cadetblue;
+}
+
+.box.cor2 {
+    background-color: crimson;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+}
