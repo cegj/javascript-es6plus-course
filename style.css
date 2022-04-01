@@ -1,5 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 @import 'modules/tooltip.css';
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
+    color: #070707;
+}
+
+img, p {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3 {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.presentation {
+    display: grid;
+    grid-template-columns: 100px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+#profilepic {
+    grid-column: 1;
+    border-radius: 50%;
+    max-height: 100px;
+}
+
+.presentation div {
+    grid-column: 2;
+}
+
+.presentation p {
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
