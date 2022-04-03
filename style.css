@@ -4,11 +4,14 @@
 
 @import 'modules/modal.css';
 
+@import 'modules/dropdownmenu.css';
+
 body {
     font-family: Roboto, sans-serif;
     color: #070707;
     padding: 0px;
     margin: 0px;
+    margin-bottom: 100px;
 }
 
 button {
@@ -29,6 +32,21 @@ h1, h2, h3 {
 h1, h2, article, section {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+h2 {
+    margin-top: 60px;
+}
+
+ul, li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .presentation {
