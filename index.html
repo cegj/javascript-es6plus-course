@@ -37,11 +37,11 @@
         <button class="modal-btn">I dare you to click here 💀</button>
     </section>
 
-    <h2>Dropdown Menu</h2>
+    <h2>Dropdown menu</h2>
     <section>
         <nav class="menu">
             <ul>
-                <li data-dropdown><a>Serius menu</a>
+                <li data-dropdown><a>Serious menu</a>
                     <ul class="dropdown-menu">
                         <li><a>About us</a></li>
                         <li data-dropdown><a>Our services</a>
@@ -79,6 +79,25 @@
                         </li>
                     </ul>
                 </li>
+            </ul>
+        </nav>
+    </section>
+
+    <h2>Mobile menu</h2>
+    <section>
+        <nav class="menu mobile">
+            <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="mobile-menu">
+                <li><a>About us</a></li>
+                <li data-dropdown><a>Our services</a>
+                    <ul class="dropdown-menu">
+                        <li><a>Consulting</a></li>
+                        <li><a>Management</a></li>
+                        <li><a>Public relations</a></li>
+                    </ul>
+                </li>
+                <li><a>Carrees</a></li>
+                <li><a>Contact us</a></li>
             </ul>
         </nav>
     </section>

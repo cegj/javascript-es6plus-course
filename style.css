@@ -6,6 +6,8 @@
 
 @import 'modules/dropdownmenu.css';
 
+@import 'modules/mobilemenu.css';
+
 body {
     font-family: Roboto, sans-serif;
     color: #070707;
