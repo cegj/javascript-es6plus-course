@@ -1,0 +1,36 @@
+.numbers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    max-width: 600px;
+    background-color: #f7f7f7;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.numbers-grid h3 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    margin: 0px;
+}
+
+.numbers-grid span {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #77006d;
+}
+
+#animate-numbers-btn {
+    background-color: #5c0054;
+    color: rgb(255, 236, 253);
+    border: 0px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', sans-serif;
+}
+
+#animate-numbers-btn:hover {
+    background-color: #490043;
+    color: white;
+}

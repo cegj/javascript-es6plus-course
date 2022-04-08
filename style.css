@@ -8,6 +8,9 @@
 
 @import 'modules/mobilemenu.css';
 
+@import 'modules/numbers.css';
+
+
 body {
     font-family: Roboto, sans-serif;
     color: #070707;

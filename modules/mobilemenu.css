@@ -20,25 +20,35 @@
 }
 
 [data-menu="button"]::before{
-    margin-right: 5px;
+    margin-right: 4px;
     content: "";
     display: inline-block;
     height: 2px;
     width: 12px;
     background-color: #fff;
     box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: transform .3s;
+}
+
+[data-menu="button"].active::before{
+    transform: rotate(90deg);
 }
 
 #mobile-menu {
-    /* display: none; */
+    display: none;
     position: absolute;
     background-color: #fb5;
     flex-direction: column;
-    width: 160.703px;
+    width: 160px;
     z-index: 200;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
-    padding-top: 60px;
-    top: 15px;
+    padding-top: 80px;
+    top: 0px;
+}
+
+#mobile-menu.active {
+    display: block;
+    animation: show-down .3s forwards;
 }
 
 #mobile-menu li {
