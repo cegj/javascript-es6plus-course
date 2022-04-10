@@ -17,18 +17,28 @@ export default function initSearchCEP(){
         .then((r) => r.json())
         .then((cepObject) => {
 
-            let cepResult = cepResultTemplate.innerHTML;
+            let cepResult;
 
-            Object.entries(cepObject).forEach((item) => {
+            if (cepObject.erro === true){
+                cepResult = '<tr><td>Invalid CEP. Please, try again.</tr></td>'
+            } else {
+
+                cepResult = cepResultTemplate.innerHTML;
+
+                Object.entries(cepObject).forEach((item) => {
 
                 cepResult = cepResult.replace(`{{${item[0]}}}`, item[1])
             
             });
+            }
 
             cepResultDOM.innerHTML = cepResult;
-
         }
-        )
+        ).catch(() => {
+            let cepResult;
+            cepResult = '<tr><td>There was an error. Please, check the CEP and try again.<br>For further information, open Javascript console.</tr></td>'
+            cepResultDOM.innerHTML = cepResult;
+        })
     }
 
 }
