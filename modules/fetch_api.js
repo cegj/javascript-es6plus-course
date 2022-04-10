@@ -51,18 +51,15 @@ export function initBitcoinSearch(){
 
 const bitcoinValueDOM = document.querySelector('#bitcoin-value');
 
-fetch('https://blockchain.info/ticker')
-.then((r) => r.json())
-.then(bitcoinObject => bitcoinValueDOM.innerHTML = +(bitcoinObject.BRL.buy).toFixed(2))
-
-
-setInterval(() => {
-
+function getBitcoinPrice(){
     fetch('https://blockchain.info/ticker')
     .then((r) => r.json())
-    .then(bitcoinObject => bitcoinValueDOM.innerHTML = +(bitcoinObject.BRL.buy).toFixed(2))
-},
-15000)
+    .then(bitcoinObject => bitcoinValueDOM.innerHTML = +(bitcoinObject.BRL.buy).toFixed(2))    
+}
+
+getBitcoinPrice();
+
+setInterval(getBitcoinPrice, 15000);
 
 }
 
