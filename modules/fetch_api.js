@@ -1,4 +1,4 @@
-export default function initSearchCEP(){
+export function initSearchCEP(){
 
     const btnCep = document.forms['cep-form']['submit-cep'];
 
@@ -43,13 +43,28 @@ export default function initSearchCEP(){
 
 }
 
-// Utilizando a API https://viacep.com.br/ws/${CEP}/json/
-// crie um formulário onde o usuário pode digitar o cep
-// e o endereço completo é retornado ao clicar em buscar
-
 // Utilizando a API https://blockchain.info/ticker
 // retorne no DOM o valor de compra da bitcoin and reais.
 // atualize este valor a cada 30s
+
+export function initBitcoinSearch(){
+
+const bitcoinValueDOM = document.querySelector('#bitcoin-value');
+
+fetch('https://blockchain.info/ticker')
+.then((r) => r.json())
+.then(bitcoinObject => bitcoinValueDOM.innerHTML = +(bitcoinObject.BRL.buy).toFixed(2))
+
+
+setInterval(() => {
+
+    fetch('https://blockchain.info/ticker')
+    .then((r) => r.json())
+    .then(bitcoinObject => bitcoinValueDOM.innerHTML = +(bitcoinObject.BRL.buy).toFixed(2))
+},
+15000)
+
+}
 
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
