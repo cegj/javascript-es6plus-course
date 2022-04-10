@@ -10,6 +10,8 @@
 
 @import 'modules/numbers.css';
 
+@import 'modules/fetch_api.css';
+
 
 body {
     font-family: Roboto, sans-serif;

@@ -125,6 +125,50 @@
         </div>
     </section>
 
+    <h2>Fetch API</h2>
+    <section>
+        <h3>CEP</h3>
+        <p>This feature uses fetch API to search for brazilian zip-code (a.k.a. CEP) information. It's provided by <a href="https://viacep.com.br" target="_blank">ViaCEP API.</a><br> You can check a list of brazilian zip-codes <a href="http://brasilcep.com.br/" target="_blank"> by clicking here.</a></p>
+        <form id="cep-form" action="#cep-result" method="">
+            <label for="cep">Type the CEP (only numbers):</label>
+            <input type="text" name="cep" id="cep">
+            <input type="submit" value="Search CEP" id="submit-cep">
+        </form>
+
+            <table id="cep-result"></table>
+
+            <table id="cep-result-template" style="display: none;">
+                <tr>
+                    <td>Address</td>
+                    <td>{{logradouro}}</td>
+                </tr>
+                <tr>
+                    <td>Address complement</td>
+                    <td>{{complemento}}</td>
+                </tr>
+                <tr>
+                    <td>Neighborhood</td>
+                    <td>{{bairro}}</td>
+                </tr>
+                <tr>
+                    <td>City/town</td>
+                    <td>{{localidade}}</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>{{uf}}</td>
+                </tr>
+                <tr>
+                    <td>Area code</td>
+                    <td>{{ddd}}</td>
+                </tr>
+            </table>
+        <h3>Bitcoin</h3>
+        <div class="bitcoin-result"></div>
+        <h3>Chuck Norris</h3>
+        <div class="chuck-result"></div>
+    </section>
+
     <div data-modal class="container-modal">
         <div class="modal">
             <div class="close-modal-btn">X</div>

@@ -8,6 +8,7 @@ import initMobileMenu from "./modules/mobilemenu.js";
 
 import initNumberAnimation from "./modules/numbers.js";
 
+import initSearchCEP from "./modules/fetch_api.js";
 
 initTooltip();
 
@@ -18,3 +19,5 @@ initDropdownMenu();
 initMobileMenu();
 
 initNumberAnimation();
+
+initSearchCEP();

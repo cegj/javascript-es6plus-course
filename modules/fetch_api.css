@@ -1,0 +1,44 @@
+form {
+    background-color: #ffffdb;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+form input, form label {
+    margin: 10px;
+    display: block;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form input[type="text"]{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1.1rem;
+}
+
+form input[type="submit"]{
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+}
+
+#cep-result {
+    margin-top: 20px;
+}
+
+#cep-result td {
+    padding: 10px;
+    background-color: #ffffdb;
+}
+
+#cep-result td:nth-child(even){
+    font-weight: bold;
+}
