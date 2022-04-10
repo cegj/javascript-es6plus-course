@@ -6,7 +6,9 @@ export default function initSearchCEP(){
 
     const cepResultDOM = document.querySelector('#cep-result')
 
-    btnCep.addEventListener('click', (event) => {
+    btnCep.addEventListener('click', searchCEP)
+
+    function searchCEP(event){
         event.preventDefault();
 
         let cep = document.forms['cep-form']['cep'].value;
@@ -27,7 +29,7 @@ export default function initSearchCEP(){
 
         }
         )
-    })
+    }
 
 }
 
