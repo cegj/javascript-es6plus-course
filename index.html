@@ -128,51 +128,62 @@
     <h2>Fetch API</h2>
     <section>
         <h3>CEP</h3>
-        <p>This feature uses fetch API to search for brazilian zip-code (a.k.a. CEP) information. It's provided by <a href="https://viacep.com.br" target="_blank">ViaCEP API.</a><br> You can check a list of brazilian zip-codes <a href="http://brasilcep.com.br/" target="_blank"> by clicking here.</a></p>
+        <p>This feature uses fetch API to search for brazilian zip-code (a.k.a. CEP) information.<br>
+        You can check a list of brazilian zip-codes <a href="http://brasilcep.com.br/" target="_blank"> by clicking here.</a></p>
         <form id="cep-form" action="#cep-result" method="">
             <label for="cep">Type the CEP (only numbers):</label>
             <input type="text" name="cep" id="cep" maxlength="8">
             <input type="submit" value="Search CEP" id="submit-cep">
         </form>
 
-            <table id="cep-result"></table>
+        <table id="cep-result"></table>
+        <p class="api-credits">This CEP infos are provided by <a href="https://viacep.com.br" target="_blank">ViaCEP API</a></p>
 
-            <table id="cep-result-template" style="display: none;">
-                <tr>
-                    <td>Address</td>
-                    <td>{{logradouro}}</td>
-                </tr>
-                <tr>
-                    <td>Address complement</td>
-                    <td>{{complemento}}</td>
-                </tr>
-                <tr>
-                    <td>Neighborhood</td>
-                    <td>{{bairro}}</td>
-                </tr>
-                <tr>
-                    <td>City/town</td>
-                    <td>{{localidade}}</td>
-                </tr>
-                <tr>
-                    <td>State</td>
-                    <td>{{uf}}</td>
-                </tr>
-                <tr>
-                    <td>Area code</td>
-                    <td>{{ddd}}</td>
-                </tr>
-            </table>
+        <table id="cep-result-template" style="display: none;">
+            <tr>
+                <td>Address</td>
+                <td>{{logradouro}}</td>
+            </tr>
+            <tr>
+                <td>Address complement</td>
+                <td>{{complemento}}</td>
+            </tr>
+            <tr>
+                <td>Neighborhood</td>
+                <td>{{bairro}}</td>
+            </tr>
+            <tr>
+                <td>City/town</td>
+                <td>{{localidade}}</td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>{{uf}}</td>
+            </tr>
+            <tr>
+                <td>Area code</td>
+                <td>{{ddd}}</td>
+            </tr>
+        </table>
+    </section>
 
-        <h3>Bitcoin</h3>
-        <div id="bitcoin-result">1 bitcoin is equal to <strong>R$ <span id="bitcoin-value">undefined</span> </strong> (Brazilian Reais - BRL).<br>This value is provided by <a href="https://blockchain.info" taget="_blank">Blockchain.info API</a> and updated each 15 seconds.`</div>
+    <h3>Bitcoin</h3>
+    <section>
+        <div class="bitcoin-grid">
+            <img src="https://cdn.icon-icons.com/icons2/1487/PNG/512/8369-bitcoin_102502.png" alt="Bitcoin">
+            <div id="bitcoin-result">1 BTC = <strong><span id="bitcoin-value">undefined</span> BRL</strong></div>
+        </div>
+        <p class="api-credits">This value is provided by <a href="https://blockchain.info" taget="_blank">Blockchain.info API</a> and updated each 15 seconds.</p>
+    </section>
 
-        <h3>Chuck Norris</h3>
+    <h3>Chuck Norris</h3>
+    <section>
         <div class="chuck-grid">
-            <img src="https://img.estadao.com.br/resources/jpg/8/3/1489168579338.jpg">
+            <img src="https://img.estadao.com.br/resources/jpg/8/3/1489168579338.jpg" alt="Chuck Norris">
             <p id="chuck-result"></p>
             <button id="next-joke-btn">Haha! Give me another one, please!</button>
         </div>
+        <p class="api-credits">This jokes are provided by <a href="https://api.chucknorris.io/" target="_blank">ChuckNorris.io API</a></p>
     </section>
 
     <div data-modal class="container-modal">

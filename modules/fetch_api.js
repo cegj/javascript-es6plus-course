@@ -33,19 +33,17 @@ export function initSearchCEP(){
             }
 
             cepResultDOM.innerHTML = cepResult;
+            cepResultDOM.style.display = "block";
         }
         ).catch(() => {
             let cepResult;
             cepResult = '<tr><td>There was an error. Please, check the CEP and try again.<br>For further information, open Javascript console.</tr></td>'
             cepResultDOM.innerHTML = cepResult;
+            cepResultDOM.style.display = "block";
         })
     }
 
 }
-
-// Utilizando a API https://blockchain.info/ticker
-// retorne no DOM o valor de compra da bitcoin and reais.
-// atualize este valor a cada 30s
 
 export function initBitcoinSearch(){
 
