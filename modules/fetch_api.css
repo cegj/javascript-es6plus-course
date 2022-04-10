@@ -21,7 +21,7 @@ form input[type="text"]{
     font-size: 1.1rem;
 }
 
-form input[type="submit"]{
+form input[type="submit"], #next-joke-btn{
     background-color: darkslategray;
     color: white;
     border: none;
@@ -41,4 +41,31 @@ form input[type="submit"]{
 
 #cep-result td:nth-child(even){
     font-weight: bold;
+}
+
+.chuck-grid {
+    display: grid;
+    max-width: 500px;
+    grid-template-columns: 140px 1fr;
+    grid-template-row: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #ffffdb;
+    padding: 15px;
+}
+
+.chuck-grid img {
+    height: 100px;
+    width: 140px;
+}
+
+.chuck-grid p {
+    font-size: 1.3rem;
+    grid-column: 2 / 4;
+}
+
+#next-joke-btn {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: left;
 }

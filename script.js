@@ -8,7 +8,7 @@ import initMobileMenu from "./modules/mobilemenu.js";
 
 import initNumberAnimation from "./modules/numbers.js";
 
-import {initSearchCEP, initBitcoinSearch} from "./modules/fetch_api.js";
+import {initSearchCEP, initBitcoinSearch, initChuckNorrisJokes} from "./modules/fetch_api.js";
 
 initTooltip();
 
@@ -23,3 +23,5 @@ initNumberAnimation();
 initSearchCEP();
 
 initBitcoinSearch();
+
+initChuckNorrisJokes();
