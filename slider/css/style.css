@@ -1,0 +1,33 @@
+body, ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+
+[data-slider] {
+    list-style: none;
+    display: flex;
+    gap: 20vw;
+}
+
+[data-slider] img {
+    height: 400px;
+    display: block;
+}
+
+[data-focused]{
+    height: 450px !important;
+}
+
+
+[data-selector] {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+[data-selector] img {
+    height: 50px;
+    border-radius: 50%;
+}
